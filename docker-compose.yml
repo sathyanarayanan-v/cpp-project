@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  cpp_sandbox:
+    image: cpp-project:latest
+    build: .
+    volumes:
+      - ./tmp/logs:/usr/src/logs
